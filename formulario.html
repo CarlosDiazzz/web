@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+      <form>
+        <div style="margin-top: 13px">
+          <label for="nombre">Ingresa tu nombre</label>
+          <input type="text" id="nombre" />
+        </div>
+        <div style="margin-top: 13px">
+          <label for="edad">Ingresa tu edad</label>
+          <input type="number" id="edad" />
+        </div>
+        <div style="margin-top: 13px">
+          <label for="fechanac">Fecha nacimiento</label>
+          <input type="date" id="fechanac" />
+        </div>
+        <div style="margin-top: 13px">
+          <label for="correo">Ingrese correo</label>
+          <input type="email" id="correo" />
+        </div>
+        <div style="margin-top: 13px;">
+            <label for="num">Numero telefono</label>
+            <input type="tel" id="num" />
+        </div>
+        <div style="margin-top: 13px;">
+            <label for="contra">Constraseña</label>
+            <input type="password" id="contra">
+        </div>
+        <div style="margin-top: 13px;">
+            <label for="carrera">Ingresa tu carrera</label>
+
+            <select name="career" id="carrera">
+                <li>
+                    <option value="default">Seleccione una Carrera</option>
+                    <option value="ISC">Ingenieria en Sistemas Computacionales</option>
+                    <option value="II">Ingenieria Industrial</option>
+                    <option value="IC">Ingenieria Civil</option>
+                    <option value="IE">Ingenieria Electronica</option>
+                    <option value="IEL">Ingenieria Electrica</option>
+                    <option value="IM">Ingenieria Mecanica</option>
+                </li>
+            </select>
+        </div>
+
+        <div style="margin-top: 13px;"> 
+            <div style="justify-content: center; align-items: center;">
+                <label for="curso">Tipo de curso</label> 
+            </div>
+            <input type="radio" name="curso" id="nomral">
+            <label for="normal">Normal</label>
+            <input type="radio" name="curso" id="recurso">
+            <label for="recurso">Recurso</label>
+            <input type="radio" name="curso" id="especial">
+            <label for="especial">Especial</label>
+        </div>
+
+        <div style="margin-top: 13px;">
+            <div>
+                <label for="materiasSel">Selecciona materias</label>
+            </div>            
+            <input type="checkbox" name="materias" id="mat">
+            <label for="mat">Matematicas</label>
+            
+            <input type="checkbox" name="materias" id="fis">
+            <label for="fis">Fisica</label>
+            
+            <input type="checkbox" name="materias" id="qui">
+            <label for="qui">Quimica</label>
+            
+            <input type="checkbox" name="materias" id="pro">
+            <label for="pro">Programación</label>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
