@@ -1,97 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asignación de tareas</title>
 </head>
+
 <body>
-    <table>
-        <thead>
-            <th colspan="2">Asignacion de tareas</th>
-        </thead>
-        <tbody>
-            <form>
-                <tr>
-                <td>
-                    <label for="asignar">ASIGNAR A</label>
-                    <br>
-                    <select name="asignar" id="asignar">
-                        <option value="default">Seleccione una opcion</option>
-                        <option value="juan">Juan Perez</option>
-                        <option value="ana">Ana Gomez</option>
-                        <option value="luis">Luis Martinez</option>
-                        <option value="maria">Maria Lopez</option>
-                        <option value="carlos">Carlos Sanchez</option>
-                    </select>
+    <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <table>
+            <thead>
+                <th colspan="2">Asignacion de tareas</th>
+            </thead>
+            <tbody>
+                <form>
+                    <tr>
+                        <td>
+                            <label for="asignar">ASIGNAR A</label>
+                            <br>
+                            <select name="asignar" id="asignar">
+                                <option value="default">Seleccione una opcion</option>
+                                <option value="juan">Juan Perez</option>
+                                <option value="ana">Ana Gomez</option>
+                                <option value="luis">Luis Martinez</option>
+                                <option value="maria">Maria Lopez</option>
+                                <option value="carlos">Carlos Sanchez</option>
+                            </select>
 
-                </td>
-                <td>
-                    <label for="validar">VALIDAR POR</label>
-                    <br>
-                    <select name="validar" id="validar">
-                        <option value="default">Seleccione una opcion</option>
-                        <option value="juan">Juan Perez</option>
-                        <option value="ana">Ana Gomez</option>
-                        <option value="luis">Luis Martinez</option>
-                        <option value="maria">Maria Lopez</option>
-                        <option value="carlos">Carlos Sanchez</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="tarea">TAREA</label>
-                    <br>
-                    <input type="text" id="tarea"/>
-                </td>
-                <td>
-                    <label for="etiqueta">Etiquetas</label>
-                    <br>
-                    <input type="checkbox" id="sistemas" name="etiquetas">
-                    <label for="sistemas">Sistemas</label>
-                    <input type="checkbox" id="test" name="etiquetas">
-                    <label for="test">Test</label>
-                    <input type="checkbox" id="despliegue" name="etiquetas">
-                    <label for="despliegue">despliegue</label>
+                        </td>
+                        <td>
+                            <label for="validar">VALIDAR POR</label>
+                            <br>
+                            <select name="validar" id="validar">
+                                <option value="default">Seleccione una opcion</option>
+                                <option value="juan">Juan Perez</option>
+                                <option value="ana">Ana Gomez</option>
+                                <option value="luis">Luis Martinez</option>
+                                <option value="maria">Maria Lopez</option>
+                                <option value="carlos">Carlos Sanchez</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="tarea">TAREA</label>
+                            <br>
+                            <input type="text" id="tarea" />
+                        </td>
+                        <td>
+                            <label for="etiqueta">Etiquetas</label>
+                            <br>
+                            <input type="checkbox" id="sistemas" name="etiquetas">
+                            <label for="sistemas">Sistemas</label>
+                            <input type="checkbox" id="test" name="etiquetas">
+                            <label for="test">Test</label>
+                            <input type="checkbox" id="despliegue" name="etiquetas">
+                            <label for="despliegue">despliegue</label>
 
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="fechanac">FECHA INICIO</label>
-                <br>
-                <input type="date" id="fechainicio"/>
-                </td>
-                <td>
-                    <label for="fechafin">FECHA FIN</label>
-                    <br>
-                    <input type="date" id="fechafin"/>
-                </td>                
-            </tr>
-            <tr>
-                <td>
-                    <label for="archivo">ARCHIVO ADJUNTO</label>
-                    <input type="file" id="archivo"/>
-                </td>
-                
-            </tr>
-            <tr>
-                <td>
-                    <label for="descripcion">DESCRIPCION</label>
-                    <br>
-                    <textarea name="descripcion" id="descripcion"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button type="submit">Asignar</button>
-                    <button type="reset">Limpiar form</button>
-                </td>
-            </tr>
-            </form>
-        </tbody>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="fechanac">FECHA INICIO</label>
+                            <br>
+                            <input type="date" id="fechainicio" />
+                        </td>
+                        <td>
+                            <label for="fechafin">FECHA FIN</label>
+                            <br>
+                            <input type="date" id="fechafin" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="archivo">ARCHIVO ADJUNTO</label>
+                            <input type="file" id="archivo" />
+                        </td>
 
-    </table>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="descripcion">DESCRIPCION</label>
+                            <br>
+                            <textarea name="descripcion" id="descripcion"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button type="submit">Asignar</button>
+                            <button type="reset">Limpiar form</button>
+                        </td>
+                    </tr>
+                </form>
+            </tbody>
+
+        </table>
+    </div>
 </body>
 </html>

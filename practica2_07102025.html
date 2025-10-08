@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+        <form>
+            <label for="numPaciente">Numero de paciente</label>
+            <input type="number" id="numPaciente" name="numPaciente" required min="1" max="999999">
+            <br>
+
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <br>
+
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" required minlength="3" maxlength="100">
+            <br>
+
+            <label for="fechNac">Fecha de nacimiento</label>
+            <input type="date" id="fechNac" name="fechNac" required>
+            <br>
+
+            <label for="numTel">Numero de telefono</label>
+            <input type="tel" id="numTel" name="numTel" required pattern="[0-9]{10}">
+            <br>
+
+            <label for="direccion">Direccion</label>
+            <input type="text" id="direccion" name="direccion" required minlength="5" maxlength="200">
+            <br>
+
+            <label for="ciudad">Ciudad</label>
+            <input type="text" id="ciudad" name="ciudad" required minlength="2" maxlength="100">
+            <br>
+
+            <label for="estado">Estado</label>
+            <input type="text" id="estado" name="estado" required minlength="2" maxlength="100">
+            <br>
+
+            <label for="codigoPostal">Codigo postal</label>
+            <input type="text" id="codigoPostal" name="codigoPostal" required pattern="[0-9]{5}">
+            <br>
+
+            <label for="correoElectronico">Correo electronico</label>
+            <input type="email" id="correoElectronico" name="correoElectronico" required>
+            <br>
+
+                <label>Estado civil</label>
+                <input type="checkbox" id="soltero" name="estadoCivil" value="soltero">
+                <label for="soltero">Soltero</label>
+
+                <input type="checkbox" id="casado" name="estadoCivil" value="casado">
+                <label for="casado">Casado</label>
+
+                <input type="checkbox" id="divorciado" name="estadoCivil" value="divorciado">
+                <label for="divorciado">Divorciado</label>
+
+                <input type="checkbox" id="separado" name="estadoCivil" value="separado">
+                <label for="separado">Separado</label>
+            
+            <br>
+            <label for="enviar">Enviar info</label>
+            <input type="radio" name="enviar" id="si">
+            <label for="si">Si</label>
+            <input type="radio" name="enviar" id="no">
+            <label for="no">No</label>
+            <br>
+
+
+            <label for="nombreresp">Nombre del responsable</label>
+            <input type="text" id="nombreresp">
+
+            <br>
+            <label for="parentesco">Parentesco</label>
+            <input type="text" id="parentesco">
+            <br>
+            <label for="direccionresp">Direccion</label>
+            <input type="text" id="direccionresp">
+            <br>
+            <label for="telcasa">Telefono casa</label>
+            <input type="tel" id="telcasa">
+            <br>
+            <label for="correoresp">Correo</label>
+            <input type="email" id="correoresp">
+            <br>
+            <label for="telpersonal">Telefono personal</label>
+            <input type="tel" id="telpersonal">
+            <br>
+            <label for="licencia">Licencia de conducir</label>
+            <input type="text" id="licencia">
+            <br>
+            <label for="fechnacresp">Fecha de nacimiento</label>
+            <input type="date" id="fechnacresp">
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+
+        </form>
+</body>
+</html>
