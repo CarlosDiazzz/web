@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <form id="formularioDental">
+        <table cellspacing="0" cellpadding="4" border="1">
+            <tr><th colspan="4">INFORMACIÓN DEL PACIENTE</th></tr>
+            <tr>
+                <td><label for="nombre" >Nombre</label><br>
+                    <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="30">
+                </td>
+                <td><label for="mi">Apellido Paterno</label><br>
+                    <input type="text" id="mi" name="mi" maxlength="2">
+                </td>
+                <td><label for="apellido">Apellido Materno </label><br>
+                    <input type="text" id="apellido" name="apellido" required minlength="2" maxlength="30">
+                </td>
+                <td><label for="fecha_nacimiento">Fecha de nacimiento</label><br>
+                    <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="direccion">Dirección</label><br>
+                    <input type="text" id="direccion" name="direccion" required minlength="5" maxlength="100">
+                </td>
+                <td><label for="ciudad">Ciudad</label><br>
+                    <input type="text" id="ciudad" name="ciudad" required minlength="2" maxlength="30">
+                </td>
+                <td><label for="estado">Estado</label><br>
+                    <input type="text" id="estado" name="estado" required minlength="2" maxlength="20">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="codigo_postal">Código Postal</label><br>
+                    <input type="text" id="codigo_postal" name="codigo_postal" required pattern="\d{5}" maxlength="5">
+                </td>
+                <td><label for="telefono_casa">Teléfono Casa</label><br>
+                    <input type="tel" id="telefono_casa" name="telefono_casa" required pattern="[0-9]{10}" maxlength="10">
+                </td>
+                <td><label for="correo">Correo electrónico</label><br>
+                    <input type="email" id="correo" name="correo" required maxlength="50">
+                </td>
+                <td><label for="telefono_celular">Teléfono Celular</label><br>
+                    <input type="tel" id="telefono_celular" name="telefono_celular" pattern="[0-9]{10}" maxlength="10">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <label>Estado civil:</label><br>
+                    <input type="checkbox" id="menor" name="menor"> <label for="menor">Menor</label>
+                    <input type="checkbox" id="soltero" name="soltero"> <label for="soltero">Soltero</label>
+                    <input type="checkbox" id="casado" name="casado"> <label for="casado">Casado</label>
+                    <input type="checkbox" id="divorciado" name="divorciado"> <label for="divorciado">Divorciado</label>
+                    <input type="checkbox" id="viudo" name="viudo"> <label for="viudo">Viudo</label>
+                    <input type="checkbox" id="separado" name="separado"> <label for="separado">Separado</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="empleador">Empleador</label><br>
+                    <input type="text" id="empleador" name="empleador" maxlength="50">
+                </td>
+                <td><label for="telefono_trabajo">Teléfono Trabajo</label><br>
+                    <input type="tel" id="telefono_trabajo" name="telefono_trabajo" pattern="[0-9]{10}" maxlength="10">
+                </td>
+                <td colspan="2"><label for="direccion_trabajo">Dirección Trabajo</label><br>
+                    <input type="text" id="direccion_trabajo" name="direccion_trabajo" maxlength="100">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="nombre_tutor">Nombre del tutor/esposo(a)</label><br>
+                    <input type="text" id="nombre_tutor" name="nombre_tutor" maxlength="30">
+                </td>
+                <td><label for="empleador_tutor">Empleador del tutor</label><br>
+                    <input type="text" id="empleador_tutor" name="empleador_tutor" maxlength="50">
+                </td>
+                <td colspan="2"><label for="farmacia">Farmacia y teléfono</label><br>
+                    <input type="text" id="farmacia" name="farmacia" maxlength="50">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="escuela">Escuela/Universidad</label><br>
+                    <input type="text" id="escuela" name="escuela" maxlength="50">
+                </td>
+                <td><label for="ciudad_escuela">Ciudad</label><br>
+                    <input type="text" id="ciudad_escuela" name="ciudad_escuela" maxlength="30">
+                </td>
+                <td colspan="2"><label for="referido">¿Quién lo refirió?</label><br>
+                    <input type="text" id="referido" name="referido" maxlength="50">
+                </td>
+            </tr>
+            <tr>
+                <td><label>¿Desea recordatorio por mensaje/correo?</label><br>
+                    <input type="radio" id="recordatorio_si" name="recordatorio" value="si" required> <label for="recordatorio_si">Sí</label>
+                    <input type="radio" id="recordatorio_no" name="recordatorio" value="no"> <label for="recordatorio_no">No</label>
+                </td>
+                <td><label for="contacto_emergencia">Contacto de emergencia</label><br>
+                    <input type="text" id="contacto_emergencia" name="contacto_emergencia" required maxlength="30">
+                </td>
+                <td colspan="2"><label for="telefono_emergencia">Teléfono de emergencia</label><br>
+                    <input type="tel" id="telefono_emergencia" name="telefono_emergencia" required pattern="[0-9]{10}" maxlength="10">
+                </td>
+            </tr>
+            <tr><th colspan="4">RESPONSABLE DE LA CUENTA</th></tr>
+            <tr>
+                <td><label for="nombre_responsable">Nombre</label><br>
+                    <input type="text" id="nombre_responsable" name="nombre_responsable" required maxlength="30">
+                </td>
+                <td><label for="relacion_responsable">Relación</label><br>
+                    <input type="text" id="relacion_responsable" name="relacion_responsable" required maxlength="20">
+                </td>
+                <td colspan="2"><label for="direccion_responsable">Dirección</label><br>
+                    <input type="text" id="direccion_responsable" name="direccion_responsable" required maxlength="100">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="correo_responsable">Correo electrónico</label><br>
+                    <input type="email" id="correo_responsable" name="correo_responsable" required maxlength="50">
+                </td>
+                <td><label for="telefono_casa_responsable">Teléfono Casa</label><br>
+                    <input type="tel" id="telefono_casa_responsable" name="telefono_casa_responsable" pattern="[0-9]{10}" maxlength="10">
+                </td>
+                <td><label for="telefono_celular_responsable">Teléfono Celular</label><br>
+                    <input type="tel" id="telefono_celular_responsable" name="telefono_celular_responsable" pattern="[0-9]{10}" maxlength="10">
+                </td>
+                <td><label for="licencia_responsable">Licencia</label><br>
+                    <input type="text" id="licencia_responsable" name="licencia_responsable" maxlength="20">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="fecha_nacimiento_responsable">Fecha de nacimiento</label><br>
+                    <input type="date" id="fecha_nacimiento_responsable" name="fecha_nacimiento_responsable">
+                </td>
+                <td><label for="empleador_responsable">Empleador</label><br>
+                    <input type="text" id="empleador_responsable" name="empleador_responsable" maxlength="50">
+                </td>
+                <td><label for="telefono_trabajo_responsable">Teléfono Trabajo</label><br>
+                    <input type="tel" id="telefono_trabajo_responsable" name="telefono_trabajo_responsable" pattern="[0-9]{10}" maxlength="10">
+                </td>
+                <td>
+                    <label>¿Es paciente actualmente?</label><br>
+                    <input type="radio" id="paciente_si" name="paciente_actual" value="si" required> <label for="paciente_si">Sí</label>
+                    <input type="radio" id="paciente_no" name="paciente_actual" value="no"> <label for="paciente_no">No</label>
+                </td>
+            </tr>
+            <tr><th colspan="4">INFORMACIÓN DEL SEGURO</th></tr>
+            <tr>
+                <td><label for="nombre_asegurado">Nombre del asegurado</label><br>
+                    <input type="text" id="nombre_asegurado" name="nombre_asegurado" required maxlength="30">
+                </td>
+                <td><label for="relacion_asegurado">Relación</label><br>
+                    <input type="text" id="relacion_asegurado" name="relacion_asegurado" required maxlength="20">
+                </td>
+                <td><label for="fecha_nacimiento_asegurado">Fecha de nacimiento</label><br>
+                    <input type="date" id="fecha_nacimiento_asegurado" name="fecha_nacimiento_asegurado" required>
+                </td>
+                <td><label for="ssn_asegurado">SSN/SIN</label><br>
+                    <input type="text" id="ssn_asegurado" name="ssn_asegurado" required maxlength="15">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="fecha_empleo_asegurado">Fecha de empleo</label><br>
+                    <input type="date" id="fecha_empleo_asegurado" name="fecha_empleo_asegurado">
+                </td>
+                <td><label for="empleador_asegurado">Empleador</label><br>
+                    <input type="text" id="empleador_asegurado" name="empleador_asegurado" maxlength="50">
+                </td>
+                <td><label for="telefono_trabajo_asegurado">Teléfono Trabajo</label><br>
+                    <input type="tel" id="telefono_trabajo_asegurado" name="telefono_trabajo_asegurado" pattern="[0-9]{10}" maxlength="10">
+                </td>
+                <td><label for="direccion_empleador_asegurado">Dirección Empleador</label><br>
+                    <input type="text" id="direccion_empleador_asegurado" name="direccion_empleador_asegurado" maxlength="100">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="compania_seguro">Compañía de seguro</label><br>
+                    <input type="text" id="compania_seguro" name="compania_seguro" required maxlength="50">
+                </td>
+                <td><label for="grupo_seguro">Grupo</label><br>
+                    <input type="text" id="grupo_seguro" name="grupo_seguro" maxlength="20">
+                </td>
+                <td><label for="direccion_seguro">Dirección de la compañía</label><br>
+                    <input type="text" id="direccion_seguro" name="direccion_seguro" maxlength="100">
+                </td>
+                <td><label for="ciudad_seguro">Ciudad</label><br>
+                    <input type="text" id="ciudad_seguro" name="ciudad_seguro" maxlength="30">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="estado_seguro">Estado</label><br>
+                    <input type="text" id="estado_seguro" name="estado_seguro" maxlength="20">
+                </td>
+                <td><label for="codigo_postal_seguro">Código Postal</label><br>
+                    <input type="text" id="codigo_postal_seguro" name="codigo_postal_seguro" maxlength="10">
+                </td>
+                <td><label for="id_seguro">ID de la compañía</label><br>
+                    <input type="text" id="id_seguro" name="id_seguro" maxlength="20">
+                </td>
+                <td><label for="telefono_seguro">Teléfono de la compañía</label><br>
+                    <input type="tel" id="telefono_seguro" name="telefono_seguro" pattern="[0-9]{10}" maxlength="10">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <label><i>¿Tiene seguro adicional? Si si rellene el siguiente formulario</i></label><br>
+                    <input type="radio" id="seguro_adicional_si" name="seguro_adicional" value="si" required> <label for="seguro_adicional_si">Sí</label>
+                    <input type="radio" id="seguro_adicional_no" name="seguro_adicional" value="no"> <label for="seguro_adicional_no">No</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="nombre_asegurado2">Nombre del asegurado</label><br>
+                    <input type="text" id="nombre_asegurado2" name="nombre_asegurado2" maxlength="30">
+                </td>
+                <td><label for="relacion_asegurado2">Relación</label><br>
+                    <input type="text" id="relacion_asegurado2" name="relacion_asegurado2" maxlength="20">
+                </td>
+                <td><label for="fecha_nacimiento_asegurado2">Fecha de nacimiento</label><br>
+                    <input type="date" id="fecha_nacimiento_asegurado2" name="fecha_nacimiento_asegurado2">
+                </td>
+                <td><label for="ssn_asegurado2">SSN/SIN</label><br>
+                    <input type="text" id="ssn_asegurado2" name="ssn_asegurado2" maxlength="15">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="fecha_empleo_asegurado2">Fecha de empleo</label><br>
+                    <input type="date" id="fecha_empleo_asegurado2" name="fecha_empleo_asegurado2">
+                </td>
+                <td><label for="empleador_asegurado2">Empleador</label><br>
+                    <input type="text" id="empleador_asegurado2" name="empleador_asegurado2" maxlength="50">
+                </td>
+                <td><label for="telefono_trabajo_asegurado2">Teléfono Trabajo</label><br>
+                    <input type="tel" id="telefono_trabajo_asegurado2" name="telefono_trabajo_asegurado2" pattern="[0-9]{10}" maxlength="10">
+                </td>
+                <td><label for="direccion_empleador_asegurado2">Dirección Empleador</label><br>
+                    <input type="text" id="direccion_empleador_asegurado2" name="direccion_empleador_asegurado2" maxlength="100">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="compania_seguro2">Compañía de seguro</label><br>
+                    <input type="text" id="compania_seguro2" name="compania_seguro2" maxlength="50">
+                </td>
+                <td><label for="grupo_seguro2">Grupo</label><br>
+                    <input type="text" id="grupo_seguro2" name="grupo_seguro2" maxlength="20">
+                </td>
+                <td><label for="direccion_seguro2">Dirección de la compañía</label><br>
+                    <input type="text" id="direccion_seguro2" name="direccion_seguro2" maxlength="100">
+                </td>
+                <td><label for="ciudad_seguro2">Ciudad</label><br>
+                    <input type="text" id="ciudad_seguro2" name="ciudad_seguro2" maxlength="30">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="estado_seguro2">Estado</label><br>
+                    <input type="text" id="estado_seguro2" name="estado_seguro2" maxlength="20">
+                </td>
+                <td><label for="codigo_postal_seguro2">Código Postal</label><br>
+                    <input type="text" id="codigo_postal_seguro2" name="codigo_postal_seguro2" maxlength="10">
+                </td>
+                <td><label for="id_seguro2">ID de la compañía</label><br>
+                    <input type="text" id="id_seguro2" name="id_seguro2" maxlength="20">
+                </td>
+                <td><label for="telefono_seguro2">Teléfono de la compañía</label><br>
+                    <input type="tel" id="telefono_seguro2" name="telefono_seguro2" pattern="[0-9]{10}" maxlength="10">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4"><label for="firma">Firma:</label>
+                    <input type="text" id="firma" name="firma" required maxlength="30">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
