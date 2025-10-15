@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario Dental</title>
 </head>
 <body>
 
@@ -12,12 +12,22 @@
         <table cellspacing="0" cellpadding="4" border="1">
             <tr><th colspan="4">INFORMACIÓN DEL PACIENTE</th></tr>
             <tr>
+                <td colspan="2">
+                    <label for="numpac">Paciente Numero</label>
+                    <input type="number" maxlength="99999" minlength="1" id="numpac">
+                </td>
+                <td colspan="2">
+                    <label for="fechoy">Fecha</label>
+                    <input type="date" id="fechoy">
+                </td>
+            </tr>
+            <tr>
                 <td><label for="nombre" >Nombre</label><br>
                     <input type="text" id="nombre" name="nombre" required minlength="2" maxlength="30">
                 </td>
                 <td><label for="mi">Apellido Paterno</label><br>
                     <input type="text" id="mi" name="mi" maxlength="2">
-                </td>
+                </td>x
                 <td><label for="apellido">Apellido Materno </label><br>
                     <input type="text" id="apellido" name="apellido" required minlength="2" maxlength="30">
                 </td>

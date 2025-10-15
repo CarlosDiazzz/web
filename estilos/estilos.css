@@ -1,0 +1,123 @@
+h1 , p {
+    color:purple;
+}
+/*Lo que hace esta parte es que pone de esa fuente a los h1 de esa clase que se encuentren "anidadas"*/
+.card-1 h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+.card-1 > h1 {
+    font-family: 'Arial Black', Gadget, sans-serif;
+}
+
+/* Hacer un ejemplo de selector de cadena, identidad, pseudoclase, de atributo, */
+
+/* Selector de cadena (descendiente): */
+.contenedor p {
+    background-color: #f0f8ff;
+}
+
+/* Selector de identidad (ID): */
+#especial {
+    border: 2px solid orange;
+}
+
+/* Selector de atributo: */
+input[type="text"] {
+    border: 1px solid #333;
+    background-color: #e0ffe0;
+}
+
+/* Estilos para etiqueta a y pseudoclases */
+a {
+    color: blue;
+    text-decoration: none;
+}
+a:visited {
+    color: purple;
+}
+a:active {
+    color: orange;
+}
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* --- Selectores Fundamentales --- */
+p {
+    color: maroon;
+}
+
+#encabezado {
+    font-size: 24px;
+}
+
+.destacado {
+    background-color: yellow;
+}
+
+/* --- Prioridad de Selectores (Especificidad) --- */
+/* Ejemplo de !important */
+.destacado {
+    background-color: yellow !important;
+}
+
+/* --- Selector en Cadena (Combinadores) --- */
+div p {
+    font-style: italic;
+}
+
+ul > li {
+    font-weight: bold;
+}
+
+h1 + p {
+    text-decoration: underline;
+}
+
+h1 ~ p {
+    font-size: 18px;
+}
+
+/* --- Pseudoclases --- */
+li:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+input:focus {
+    border: 2px solid green;
+}
+
+p:first-child {
+    color: orange;
+}
+
+div:not(.clase) {
+    border: 1px dashed #aaa;
+}
+
+/* --- Selectores de Atributo --- */
+a[title] {
+    color: teal;
+}
+
+input[type="text"] {
+    border: 1px solid #333;
+    background-color: #e0ffe0;
+}
+
+a[href^="https"] {
+    font-weight: bold;
+}
+
+img[src$=".png"] {
+    border: 2px solid #00f;
+}
+
+[class*="icono"] {
+    color: #ff6600;
+}
+
+[class~="importante"] {
+    background: #ffe4e1;
+}

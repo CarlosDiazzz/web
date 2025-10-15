@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Selectores Fundamentales -->
+    <h1 id="encabezado">Encabezado con ID</h1>
+    <p>Este es un párrafo azul (selector de tipo).</p>
+    <div class="destacado">Div destacado con fondo amarillo</div>
+
+    <!-- Prioridad de Selectores (Especificidad) -->
+    <div class="destacado">Este div tiene fondo amarillo por !important</div>
+
+    <!-- Selector en Cadena (Combinadores) -->
+    <div>
+        <p>Este párrafo está dentro de un div y es cursiva.</p>
+    </div>
+    <ul>
+        <li>Primer ítem (hijo directo de ul, negrita)</li>
+        <li>Segundo ítem</li>
+    </ul>
+    <h1>Hermano h1</h1>
+    <p>Este párrafo es hermano adyacente de h1 y subrayado.</p>
+    <h1>Hermano general h1</h1>
+    <p>Este párrafo es hermano general de h1 y tamaño 18px.</p>
+    <p>Otro párrafo hermano general de h1.</p>
+
+    <!-- Pseudoclases -->
+    <ul>
+        <li>Ítem impar 1</li>
+        <li>Ítem par 2</li>
+        <li>Ítem impar 3</li>
+    </ul>
+    <input type="text" placeholder="Foco para borde verde">
+    <div>
+        <p>Primer hijo de div (color naranja)</p>
+        <p>Segundo hijo de div</p>
+    </div>
+    <div class="no-clase">Div sin clase .clase (borde punteado)</div>
+
+    <!-- Selectores de Atributo -->
+    <a href="#" title="Enlace con título">Enlace con atributo title (color teal)</a>
+    <input type="text" placeholder="Campo de texto exacto">
+    <a href="https://ejemplo.com">Enlace que empieza con https (negrita)</a>
+    <img src="imagen.png" alt="Imagen PNG con borde azul">
+    <span class="icono-casa">Icono casa (color naranja)</span>
+    <div class="importante">Div con clase importante (fondo rosa claro)</div>
+    
+
+    <!-- Ejemplos de pseudoclases para enlaces -->
+    <h2>Ejemplos de pseudoclases en enlaces</h2>
+    <ul>
+        <li><a href="https://www.google.com" target="_blank">Enlace visitado (haz clic y vuelve)</a></li>
+        <li><a href="#" onclick="return false;">Enlace activo (mantén clic)</a></li>
+        <li><a href="#">Enlace hover (pasa el mouse)</a></li>
+    </ul>
+</body>
+</html>
