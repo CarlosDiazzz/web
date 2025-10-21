@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.contenedor {
+    width: 400px;
+    height: 200px;
+    background: lightblue;
+    color: aliceblue;
+    /*Arriba, derecha, abajo e izquierda*/
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    
+}
