@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+html, body {
+    height: 100%;
+}
+
+.page-bg {
+    position: fixed;
+    inset: 4vh 4vw;
+    background: radial-gradient(1200px 600px at 10% 20%, #cfe7ff 0%, transparent 20%),
+                linear-gradient(135deg, #7cc3ff 0%, #b9bafc 45%, #e6f0ff 100%);
+    border-radius: 28px;
+    box-shadow: 0 8px 40px rgba(15, 23, 42, 0.06);
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* contenedor centrado en primer plano */
+.contenedor-form {
+    position: relative;
+    z-index: 1;
+    min-width: 360px;
+    max-width: 460px;
+    width: 420px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 36px 20px;
+    /* colocación centrada vertical completa */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* tarjeta blanca */
+.card {
+    width: 100%;
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    padding: 28px 28px;
+}
+
+/* cabecera pequeña con logo y títulos */
+.card-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+}
+
+.brand {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+}
+
+/* títulos */
+.titulo-form {
+    font-size: 18px;
+    margin: 4px 0;
+    font-weight: 700;
+    
+}
+
+.subtitulo-form {
+    font-size: 13px;
+    color: #6b7280;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* formulario */
+.form-body {
+    margin-top: 8px;
+}
+
+.contenedor-mail,
+.contenedor-password {
+    display: flex;
+    flex-direction: column;
+    margin: 16px 0;
+}
+
+label {
+    font-size: 12px;
+    color: #111827;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+/* inputs estilo moderno */
+input[type="email"],
+input[type="password"] {
+    height: 44px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #e6e9ef;
+    background: #fbfdff;
+    outline: none;
+    transition: box-shadow .15s, border-color .15s;
+}
+
+input::placeholder {
+    color: #9ca3af;
+}
+
+input:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 4px 12px rgba(96,165,250,0.12);
+}
+
+.contenedor-opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px 0 16px 0;
+}
+
+.left-opt {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: #374151;
+    font-size: 13px;
+}
+
+.forgot {
+    color: #3b82f6;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+
+.contenedor-botones {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 6px;
+}
+
+.btn-primary {
+    background: linear-gradient(180deg,#5b8bff,#3b6ff8);
+    color: white;
+    border: none;
+    height: 44px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(59,111,248,0.16);
+}
+
+.btn-google {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    height: 44px;
+    border-radius: 10px;
+    border: 1px solid #e6e9ef;
+    background: #ffffff;
+    cursor: pointer;
+    color: #111827;
+    font-weight: 600;
+    padding: 0 12px;
+}
+
+
+.btn-google svg { display: block; }
+
+
+.contenedor-other-options {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.contenedor-other-options a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+@media (max-width: 480px) {
+    .page-bg { inset: 2vh 2vw; border-radius: 12px; }
+    .contenedor-form { width: calc(100% - 36px); left: 50%; transform: translate(-50%, -50%); top: 50%; }
+    .card { padding: 20px; }
+}
+
+
+
