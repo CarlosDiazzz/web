@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="profile-card">
+                <div class="profile-header">
+                    <div class="profile-avatar">
+                        <img src="https://via.placeholder.com/80" alt="Avatar">
+                    </div>
+                    <h2>ALEX JOHNSON</h2>
+                    <p>alex.johnson@email.com</p>
+                </div>
+                
+                <nav class="sidebar-nav">
+                    <a href="#" class="nav-item active">
+                        <span class="icon">📊</span>
+                        <span>DASHBOARD</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="icon">✈️</span>
+                        <span>FLIGHTS</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="icon">💳</span>
+                        <span>WALLET</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="icon">📄</span>
+                        <span>REPORTS</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="icon">📊</span>
+                        <span>STATISTICS</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="icon">⚙️</span>
+                        <span>SETTINGS</span>
+                    </a>
+                </nav>
+
+                <div class="team-members">
+                    <div class="member-avatars">
+                        <img src="https://via.placeholder.com/40" alt="Member 1">
+                        <img src="https://via.placeholder.com/40" alt="Member 2">
+                        <img src="https://via.placeholder.com/40" alt="Member 3">
+                        <img src="https://via.placeholder.com/40" alt="Member 4">
+                        <div class="more">+3</div>
+                    </div>
+                </div>
+
+                <div class="map-widget">
+                    <img src="https://via.placeholder.com/200x120/3a5a5a/ffffff?text=World+Map" alt="Map">
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header Cards -->
+            <div class="header-cards">
+                <div class="card card-balance">
+                    <div class="card-icon">✈️</div>
+                    <div class="card-info">
+                        <p>Your Balance</p>
+                        <h3>$4,290</h3>
+                    </div>
+                </div>
+                <div class="card card-miles">
+                    <div class="card-icon">🎫</div>
+                    <div class="card-info">
+                        <p>Miles BTT</p>
+                        <h3>5,670</h3>
+                    </div>
+                </div>
+                <div class="card card-trips">
+                    <div class="card-icon">🗺️</div>
+                    <div class="card-info">
+                        <p>Total Trips</p>
+                        <h3>432</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-grid">
+                <!-- Left Column -->
+                <div class="left-column">
+                    <!-- Last Trips -->
+                    <section class="section last-trips">
+                        <h3>Last Trips</h3>
+                        <div class="tabs">
+                            <button class="tab active">Last week</button>
+                            <button class="tab">Morocco</button>
+                            <button class="tab">Egypt</button>
+                            <button class="tab">Your Vacation</button>
+                            <button class="tab">Total Trips</button>
+                        </div>
+                        
+                        <div class="trip-list">
+                            <div class="trip-item">
+                                <img src="https://via.placeholder.com/40" alt="User" class="trip-avatar">
+                                <div class="trip-info">
+                                    <h4>Marvin McKinney</h4>
+                                    <p>marvin.mckinney@gmail.com</p>
+                                </div>
+                                <div class="trip-destination">
+                                    <p>Destination</p>
+                                    <strong>Milan</strong>
+                                </div>
+                                <div class="trip-price">
+                                    <span class="price-badge">$380</span>
+                                </div>
+                            </div>
+
+                            <div class="trip-item">
+                                <img src="https://via.placeholder.com/40" alt="User" class="trip-avatar">
+                                <div class="trip-info">
+                                    <h4>Savannah Nguyen</h4>
+                                    <p>savannah@gmail.com</p>
+                                </div>
+                                <div class="trip-destination">
+                                    <p>Destination</p>
+                                    <strong>Dubai</strong>
+                                </div>
+                                <div class="trip-price">
+                                    <span class="price-badge">$280</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Flights Share -->
+                    <section class="section flights-share">
+                        <h3>Flights Share</h3>
+                        <div class="donut-chart">
+                            <svg viewBox="0 0 200 200">
+                                <circle cx="100" cy="100" r="80" fill="none" stroke="#e0e0e0" stroke-width="40"/>
+                                <circle cx="100" cy="100" r="80" fill="none" stroke="#d4a04c" stroke-width="40" 
+                                        stroke-dasharray="150 350" stroke-dashoffset="25"/>
+                                <circle cx="100" cy="100" r="80" fill="none" stroke="#4a7c7c" stroke-width="40" 
+                                        stroke-dasharray="100 400" stroke-dashoffset="-125"/>
+                                <circle cx="100" cy="100" r="80" fill="none" stroke="#6ba3a3" stroke-width="40" 
+                                        stroke-dasharray="80 420" stroke-dashoffset="-225"/>
+                                <text x="100" y="95" text-anchor="middle" font-size="24" font-weight="bold" fill="#333">75%</text>
+                                <text x="100" y="115" text-anchor="middle" font-size="12" fill="#666">Flight hours</text>
+                            </svg>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Right Column -->
+                <div class="right-column">
+                    <!-- Statistics -->
+                    <section class="section statistics">
+                        <h3>Statistics</h3>
+                        <div class="stats-chart">
+                            <div class="chart-bars">
+                                <div class="bar-group">
+                                    <div class="bar bar-dark" style="height: 40%"></div>
+                                    <div class="bar bar-gold" style="height: 80%"></div>
+                                    <span class="bar-label">Q1</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar bar-dark" style="height: 60%"></div>
+                                    <div class="bar bar-gold" style="height: 70%"></div>
+                                    <span class="bar-label">Q2</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar bar-dark" style="height: 50%"></div>
+                                    <div class="bar bar-gold" style="height: 90%"></div>
+                                    <span class="bar-label">Q3</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar bar-dark" style="height: 70%"></div>
+                                    <div class="bar bar-gold" style="height: 85%"></div>
+                                    <span class="bar-label">Q4</span>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar bar-dark" style="height: 45%"></div>
+                                    <div class="bar bar-gold" style="height: 75%"></div>
+                                    <span class="bar-label">Q5</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Flights Schedule -->
+                    <section class="section flights-schedule">
+                        <h3>Flights Schedule</h3>
+                        <div class="schedule-chart">
+                            <div class="chart-tooltip">
+                                <div class="tooltip-bubble">
+                                    <strong>January Trips</strong>
+                                    <p>$6,800</p>
+                                </div>
+                            </div>
+                            <svg viewBox="0 0 400 200" class="line-chart">
+                                <polyline points="0,150 50,120 100,140 150,100 200,80 250,90 300,70 350,60 400,75" 
+                                          fill="none" stroke="#d4a04c" stroke-width="3"/>
+                                <polyline points="0,180 50,160 100,170 150,140 200,120 250,130 300,110 350,100 400,120" 
+                                          fill="none" stroke="#4a7c7c" stroke-width="3"/>
+                                <circle cx="200" cy="80" r="6" fill="#d4a04c"/>
+                            </svg>
+                            <div class="chart-labels">
+                                <span>JAN</span>
+                                <span>FEB</span>
+                                <span>MAR</span>
+                                <span>APR</span>
+                                <span>MAY</span>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
